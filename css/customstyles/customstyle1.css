@@ -212,7 +212,7 @@
 
 
 .navigation-list ul li.navigation-drop.list-opened span {
-    background: url(https://github.com/erbpsy/OrdersStats/blob/master/images/arrow-up.PNG);
+    background: url(https://raw.githubusercontent.com/erbpsy/OrdersStats/master/images/arrow-up.PNG);
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: 90% 20px;
