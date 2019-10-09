@@ -26,7 +26,7 @@
     text-align: left;
     width: 100%;
     height: 74px;
-    background: url(../../images/square-logo1.png);
+    background: url(https://raw.githubusercontent.com/erbpsy/OrdersStats/master/images/square-logo1.png);
     background-size: 78%;
     background-repeat: no-repeat;
     background-position: center;
@@ -118,7 +118,7 @@
                     float: left;
                     width: 100%;
                     padding: 12px 0px;
-                    background: url(../../images/arrow-down.png);
+                    background: url(https://raw.githubusercontent.com/erbpsy/OrdersStats/master/images/arrow-down.png);
                     background-repeat: no-repeat;
                     background-size: 10px;
                     background-position: 90% 20px;
@@ -171,7 +171,7 @@
 }
 
 .navigation-icon {
-    background: url(../images/menu-slide.png);
+    background: url(https://raw.githubusercontent.com/erbpsy/OrdersStats/master/images/menu-slide.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 30px;
@@ -252,7 +252,7 @@
         .left-menu ul li span {
             padding-right: 30px;
             margin-right: 20px;
-            background-image: url(../../images/arrow-black.png);
+            background-image: url(https://raw.githubusercontent.com/erbpsy/OrdersStats/master/images/arrow-black.png);
             background-repeat: no-repeat;
             background-position: 88% 6px;
             background-size: 9px;

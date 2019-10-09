@@ -152,7 +152,7 @@ body {
     text-align: left;
     width: 100%;
     height: 74px;
-    background: url(../images/square-logo1.png);
+    background: url(https://raw.githubusercontent.com/erbpsy/OrdersStats/master/images/square-logo1.png);
     background-size: 78%;
     background-repeat: no-repeat;
     background-position: center;
@@ -248,7 +248,7 @@ body {
                     float: left;
                     width: 100%;
                     padding: 12px 0px;
-                    background: url(../images/arrow-down.png);
+                    background: url(https://raw.githubusercontent.com/erbpsy/OrdersStats/master/images/arrow-down.png);
                     background-repeat: no-repeat;
                     background-size: 10px;
                     background-position: 90% 20px;
@@ -301,7 +301,7 @@ body {
 }
 
 .navigation-icon {
-    background: url(../images/menu-slide.png);
+    background: url(https://raw.githubusercontent.com/erbpsy/OrdersStats/master/images/menu-slide.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 30px;
@@ -382,7 +382,7 @@ body {
         .left-menu ul li span {
             padding-right: 30px;
             margin-right: 20px;
-            background-image: url(../images/arrow-white.png);
+            background-image: url(https://raw.githubusercontent.com/erbpsy/OrdersStats/master/images/arrow-white.png);
             background-repeat: no-repeat;
             background-position: 88% 4px;
             background-size: 9px;
@@ -977,7 +977,7 @@ body.navigation-slide-out .burger-icon span:nth-child(3) {
 .splitter {
   flex: 0 0 auto;
   width: 18px;
-  background: url(../images/vsizegrip.png) center center no-repeat #ececec;
+  background: url(https://raw.githubusercontent.com/erbpsy/OrdersStats/master/images/vsizegrip.png) center center no-repeat #ececec;
   min-height: 200px;
   cursor: col-resize;
 }
@@ -1017,7 +1017,7 @@ body.navigation-slide-out .burger-icon span:nth-child(3) {
 .splitter-horizontal {
   flex: 0 0 auto;
   height: 18px;
-  background: url(../images/hsizegrip.png) center center no-repeat #ececec;
+  background: url(https://raw.githubusercontent.com/erbpsy/OrdersStats/master/images/hsizegrip.png) center center no-repeat #ececec;
   cursor: row-resize;
 }
 
@@ -1120,7 +1120,7 @@ width: 30px;
       
 height: 30px;
       
-background-image: url('../images/close.png');
+background-image: url('https://raw.githubusercontent.com/erbpsy/OrdersStats/master/images/close.png');
       
 background-repeat: no-repeat;
       
