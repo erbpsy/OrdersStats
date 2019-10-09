@@ -1,0 +1,300 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1" />
+    <title>Order Statistics</title>
+    <link href="css/common-style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div id="draggable-div">
+                <div id="draggable-divheader">Click here to move
+                    <span class="close-draggable"></span>
+                </div>
+                <textarea placeholder="Comment Please"></textarea>
+                <p>Are you sure you would like to choose this template? Remember you can change templates at any time</p>
+            <div class="drag-footer"><label class="close-draggable">Okay</label></div>
+            </div>
+    <div class="comman-edit-popup-main select-popup-body" style="display:none;">
+        <div class="edit-popup-body discover-alert-dialog">
+            <div class="main-poup-body">
+                <h2>Choose this template </h2>
+                <p>Are you sure you would like to choose this template? Remember you can change templates at any time</p>
+                <div class="hide-chart wrapper hide-barchart"><canvas id="barChart" width="400" height="400"></canvas></div>
+                <div class="hide-chart hide-linechart"><canvas id="lineChart" width="400" height="400"></canvas></div>
+                <div class="hide-chart hide-candlestickchart"><div id="chartContainer" style="height: 80%; width: 80%;"></div></div>
+            </div>
+            <div class="popup-footer">
+                <a href="#" class="popup-link">Save And Continue</a>
+                <a href="#" class="popup-link popup-hide-btn">Cancel</a>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard-container">
+        <div class="left-side-navigation">
+            <div class="navigation-logo">
+                <a href="#"></a>
+            </div>
+            <div class="navigation-list">
+                <ul>
+                    <li class="navigation-drop">
+                        <span><img src="images/www.png" /> <label>Orders</label></span>
+                        <ul class="drop-list">
+                            <li><a href="#">Place new order</a></li>
+                            <li><a href="#">Show open orders</a></li>
+                            <li><a href="#">Show DOM</a></li>
+                            <li><a href="#">Kill all orders</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation-drop">
+                        <span><img src="images/smartphone.png" /> <label>Statistics</label></span>
+                        <ul class="drop-list">
+                            <li><a href="#">PnL Overview</a></li>
+                            <li><a href="#">PnL by Strategy</a></li>
+                            <li><a href="#">PnL by Date</a></li> 
+                            <li><a href="#">PnL by Date</a></li>   
+                        </ul>
+                    </li>
+                    <li class="navigation-drop">
+                        <span><img src="images/settings.png" /> <label>Chart</label></span>
+                        <ul class="drop-list">
+                            <li><a href="#">Show line chart</a></li>
+                            <li><a href="#">Show barchart</a></li>
+                            <li><a href="#">Show candlestick chart</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                            <a href="#" id="open-draggable"><img src="images/briefcase.png" /><label>Open Draggable Popup</label></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="categories-list">
+                <div class="nav-section-tree">
+                    <ul class="tree">
+                        <li class="grand-parent-node">
+                            <span>Corporation</span>
+                            <ul>
+                                <li class="parent-node">
+                                    <span> Orders</span>
+                                    <ul>
+                                        <li class="child-node">
+                                            <span> Place New Order</span>
+                                            <ul>
+                                                <li class="grand-child-node">
+                                                    <span> Place New Electonics Order</span>
+                                                </li>
+                                                <li class="grand-child-node">
+                                                    <span>  Place New Apparals Order</span>
+                                                </li>
+                                                <li class="grand-child-node">
+                                                    <span> Place New Home Appliences Order</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="child-node">
+                                            <span>Show Open Orders</span>
+                                            <ul>
+                                                <li class="grand-child-node">
+                                                    <span> Show Open Electonics Order</span>
+                                                </li>
+                                                <li class="grand-child-node">
+                                                    <span> Show Open Apparals Order</span>
+                                                </li>
+                                                <li class="grand-child-node">
+                                                    <span> Show Open Home Appliences Order</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="child-node">
+                                            <span> Show DOM </span>
+                                        </li>
+                                        <li class="child-node">
+                                            <span>
+                                                Kill All Orders
+                                            </span>
+                                            <ul>
+                                                <li class="grand-child-node">
+                                                    <span> Kill Electonics Order</span>
+                                                </li>
+                                                <li class="grand-child-node">
+                                                    <span> Kill Apparals Order</span>
+                                                </li>
+                                                <li class="grand-child-node">
+                                                    <span> Kill Home Appliences Order</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="parent-node">
+                                    <span> Statistics</span>
+                                    <ul>
+                                        <li class="child-node">
+                                            <span> PnL Overview</span>
+                                        </li>
+                                        <li class="child-node">
+                                            <span> Pnl By Strategy</span>
+                                        </li>
+                                        <li class="child-node">
+                                            <span> PnL By Date</span>
+                                        </li>
+                                        <li class="child-node">
+                                            <span> PnL By Security</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="parent-node">
+                                    <span> Chart</span>
+                                    <ul>
+                                        <li class="child-node">
+                                            <span> Show Line Chart</span>
+                                        </li>
+                                        <li class="child-node">
+                                            <span> Show Bar-Chart</span>
+                                        </li>
+                                        <li class="child-node">
+                                            <span> Show Candilstick-Chart</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right-side-content">
+            <div class="dash-header">
+                <div class="navigation-logo-header">
+                    <a href="#"><img src="images/logo-icon.png" /></a>
+                </div>
+                <div class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="left-menu">
+                    <ul>
+                        <li>
+                            <span class="view-dropdown">Websites</span>
+                            <ul class="menu-drop">
+                                <li><a href="#">vacationlookup.vrmyway.com</a></li>
+                                <li><a href="#">myvacationspot.vrmyway.com</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="view-dropdown">Pages</span>
+                            <ul class="menu-drop">
+                                <li><a href="#">Home Page</a></li>
+                                <li><a href="#">About Us Page</a></li>
+                                <li><a href="#">Services Page</a></li>
+                                <li><a href="#">Contact Us Page</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile">
+                    <ul>
+                        <li>
+                            <div class="enable-fulscreen">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile-info"><label>BHANU PRATAP</label> <span><img src="images/Image 1.png" /></span></div>
+                            <ul class="view-profile-info">
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">My Calendar</a></li>
+                                <li><a href="#">Account Settings</a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="website-name-created">
+                    <a href="#">christoph.haenle.com <label class="backgroung-radius"></label> </a>
+                </div>
+                <div class="switch-theame">
+                    <span class="gear-icon">
+                        <img src="images/gear.PNG" />
+                        <label class="theame-backgroung-radius"></label>
+                    </span>
+                </div>
+            </div>
+            <div class="select-theme-sidebar">
+                <h3>Select Theme</h3>
+                <p>Currently you are using <span>Dark Theme</span></p>
+                <label>Choose Your Theme</label>
+                <select name="colorpick" id="colorpick" class="form-control">
+                    <option value="defaultstyles" selected>Default Theme</option>
+                    <option value="customstyle1">Dark Theme</option>
+                    <option value="customstyle2">Light Theme</option>
+                    <option value="customstyle3">Modern Theme</option>
+                </select>
+                <ul class="theme-list">
+                    <li>
+                        <div class="theme-selector">
+                            <h4>Dark Theme</h4>
+                            <input type="radio" id="dark-theme" name="theme" checked/>
+                            <label for="dark-theme">
+                                <img src="images/dark-theme-privew.PNG" />
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="theme-selector">
+                            <h4>Light Theme</h4>
+                            <input type="radio" id="light-theme" name="theme"/>
+                            <label for="light-theme">
+                                <img src="images/light-theme-privew.PNG" />
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel-container">
+                <div class="panel-left">
+                    left panel
+                </div>
+                <div class="splitter">
+                </div>
+                <div class="panel-right">
+                    <div class="panel-container-vertical">
+                        <div class="panel-top">
+                            top panel
+                        </div>
+                        <div class="splitter-horizontal">
+                        </div>
+                        <div class="panel-bottom">
+                            bottom panel
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>    
+    <script src="js/custom.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+    <script src="js/shuffle.js"></script>
+    <script src="js/jquery-resizable.js"></script>
+    <script type="text/javascript">
+        $(".panel-left").resizable({
+            handleSelector: ".splitter",
+            resizeHeight: false
+        });
+
+        $(".panel-top").resizable({
+            handleSelector: ".splitter-horizontal",
+            resizeWidth: false
+        });
+
+
+        $(document).ready(function () {
+            $('#colorpick').styleSwitcher();
+        });
+    </script>
+</body>
+</html>
